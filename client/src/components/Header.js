@@ -30,7 +30,8 @@ class Header extends Component {
   }
   render() {
     return (
-      <nav>
+      <div>
+      <nav style={{backgroundColor:"turquoise"}}>
         <div className="nav-wrapper">
           <Link
             to={this.props.auth ? "/surveys" : "/"}
@@ -41,6 +42,7 @@ class Header extends Component {
           <ul className="right">{this.renderContent()}</ul>
         </div>
       </nav>
+      </div>
     );
   }
 }
