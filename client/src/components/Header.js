@@ -36,7 +36,7 @@ class Header extends Component {
           <Link
             to={this.props.auth ? "/surveys" : "/"}
             className="left brand-logo"
-            style={{paddingLeft:"2px"}}
+            style={{paddingLeft:"1em"}}
           >
             Mail-Genie
           </Link>

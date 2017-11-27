@@ -1,15 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SurveyList from "./surveys/SurveyList";
 
 const Dashboard = () => {
-  return <div className="container" style={{textAlign: 'center'}}>
-  <h4>Dashboard</h4>
-
-    <Link to="/surveys/new"className="btn-floating btn-large right green">
-      <i className="large material-icons">add</i>
-    </Link>
-
-</div>
+  return (
+    <div className="container">
+      <SurveyList />
+      <div className="fixed-action-btn">
+        <Link to="/surveys/new" className="btn-floating btn-large right green">
+          <i className="large material-icons">add</i>
+        </Link>
+      </div>
+    </div>
+  );
 };
 
 export default Dashboard;
